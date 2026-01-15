@@ -1,0 +1,29 @@
+{
+	"name": "@project-ajax/template",
+	"version": "0.0.0",
+	"main": "dist/index.js",
+	"private": true,
+	"scripts": {
+		"build": "tsc",
+		"check": "tsc --noEmit",
+		"dev": "tsx --watch src/index.ts",
+		"start": "node dist/index.js",
+		"bump-sdk": "npm install @project-ajax/sdk@latest"
+	},
+	"engines": {
+		"node": ">=22.0.0",
+		"npm": ">=10.9.2"
+	},
+	"devDependencies": {
+		"@types/node": "^22.9.0",
+		"tsx": "^4.20.6",
+		"typescript": "^5.8.0"
+	},
+	"dependencies": {
+		"@neondatabase/serverless": "^1.0.2",
+		"@project-ajax/cli": ">=0.0.0",
+		"@project-ajax/sdk": ">=0.0.0",
+		"notion-to-md": "^3.1.9",
+		"zod": "^4.3.5"
+	}
+}
